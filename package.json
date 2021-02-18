@@ -1,0 +1,25 @@
+{
+  "name": "blazebotapp",
+  "version": "1.0.0",
+  "description": "An application app for Blazebot",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmNotTheLeo/BlazeBotApp.git"
+  },
+  "author": "Leo Chimborazo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IAmNotTheLeo/BlazeBotApp/issues"
+  },
+  "homepage": "https://github.com/IAmNotTheLeo/BlazeBotApp#readme",
+  "dependencies": {
+    "electron": "^11.2.3",
+    "electron-packager": "^15.2.0",
+    "jquery": "^3.5.1",
+    "sweetalert2": "^10.15.2"
+  }
+}
