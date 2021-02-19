@@ -1,4 +1,6 @@
 {
-    "test1": "testing",
-    "test2": "testing2"
+  "commands": {
+    "test1": "1testing",
+    "test2": "2testing"
+  }
 }

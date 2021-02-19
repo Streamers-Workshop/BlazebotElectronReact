@@ -1,4 +1,9 @@
 const Swal = require("sweetalert2");
+const fs = require("fs");
+const path = require("path");
+
+const jsonData = fs.readFileSync(path.join(__dirname, "../test.json"));
+const parseValue = JSON.parse(jsonData);
 
 function cmdValidation() {
   const inputCmd = document.getElementById("inputCommand").value;
@@ -23,10 +28,19 @@ function cmdValidation() {
       text: "Make sure Command Message is not over 300 characters!",
     });
   } else {
+    try {
+      fs.writeFileSync(path.join(__dirname, "../test.json"), data);
+    } catch (e) {
+      alert(e);
+    }
     Swal.fire({
       icon: "success",
       title: "Command Saved",
       text: `Command - "${inputCmd}" is Saved`,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.reload();
+      }
     });
   }
 }
