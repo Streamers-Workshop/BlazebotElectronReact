@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blaze App</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=ABeeZee"
+      rel="stylesheet"
+    />
+    <script src="../js/commandValidation.js"></script>
+  </head>
+  <body>
+    <div class="sidenav">
+      <img
+        src="../images/trovologo.png"
+        width="45"
+        height="45"
+        style="margin: 0px 0px 20px 25px"
+      />
+      <button class="dropdown-btn">
+        Bot Commands
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./commands.html">List of Commands</a>
+        <a href="./addCmd.html">Add Commmand</a>
+        <a href="./deleteCmd.html">Delete Command</a>
+        <a href="./editCmd.html">Edit Command</a>
+      </div>
+      <a href="./plugins.html">Plugins</a>
+      <a href="./live.html">Live</a>
+      <button class="dropdown-btn">
+        Overlays
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-container">
+        <a href="./labels.html">Labels</a>
+      </div>
+      <a href="./login.html">Login</a>
+    </div>
+    <div class="main">
+      <div class="container" style="padding: 35px">
+        <form>
+          <div class="borderTitle"><h2>Commands</h2></div>
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Command</th>
+                <th scope="col">Message</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Otto</td>
+                <td>mdo</td>
+              </tr>
+              <tr>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="../js/dropdown.js"></script>

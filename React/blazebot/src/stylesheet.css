@@ -1,0 +1,10 @@
+.dropdown-commands {
+  overflow-y: visble;
+  overflow-x: hidden;
+  height: 400px;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
