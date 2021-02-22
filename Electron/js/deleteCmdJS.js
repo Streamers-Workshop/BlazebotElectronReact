@@ -20,7 +20,7 @@ $(document).ready(function () {
 });
 
 function deleteProceed() {
-  const selectedCmd = document.getElementById("selectForm").value;
+  const selectedCmd = $("#selectForm").val();
 
   if (selectedCmd == 0) {
     Swal.fire({

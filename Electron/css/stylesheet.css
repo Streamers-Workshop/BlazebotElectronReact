@@ -4,6 +4,15 @@ body {
   font-size: 20px !important;
 }
 
+/* Logo */
+
+.imagePlacement {
+  margin: 10px 0px 20px 20px;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+/* Preview Container - labels.html */
+
 .previewLabelContainer {
   background-color: rgb(44, 43, 43);
   text-align: center;
@@ -12,17 +21,20 @@ body {
   height: 190px;
 }
 
+/* Titles */
+
 .borderTitle {
-  background: rgb(134, 133, 144);
-  background: linear-gradient(
-    90deg,
-    rgba(134, 133, 144, 1) 0%,
-    rgba(255, 255, 255, 1) 94%
-  );
-  border-radius: 0px 20px 0px 20px;
-  padding: 15px;
+  background: linear-gradient(90deg, #1b4332 0%, #40916c 80%);
+  border-radius: 35px 3px 35px 3px;
+  padding-top: 10px;
+  padding-bottom: 3px;
   margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
 }
+
+/* Side Nav */
 
 .sidenav {
   height: 100%;
@@ -31,7 +43,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(24, 22, 22);
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -86,4 +98,59 @@ body {
   .sidenav a {
     font-size: 18px;
   }
+}
+
+/* Toggle Switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 18px;
+  margin-top: 4px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 2px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #1f7bff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }

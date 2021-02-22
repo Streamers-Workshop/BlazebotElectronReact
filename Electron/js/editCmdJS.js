@@ -20,8 +20,9 @@ $(document).ready(function () {
 });
 
 function editProceed() {
-  const selectedCmd = document.getElementById("selectForm").value;
-  const inputEditCmd = document.getElementById("txtareaEdit").value;
+  const selectedCmd = $("#selectForm").val();
+  const inputEditCmd = $("#txtareaEdit").val();
+
   if (selectedCmd === 0) {
     Swal.fire({
       icon: "error",
@@ -32,7 +33,13 @@ function editProceed() {
     Swal.fire({
       icon: "error",
       title: "Edit Field Empty",
-      text: "Please Select Command to Edit",
+      text: "Please Add Message to Command",
+    });
+  } else if (inputEditCmd.length >= 300) {
+    Swal.fire({
+      icon: "error",
+      title: "Command Message Exceeded",
+      text: "Make sure Command Message is not over 300 characters!",
     });
   } else {
     Swal.fire({

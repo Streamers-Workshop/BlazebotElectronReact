@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Blaze App</title>
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="script-src 'self' 'unsafe-inline';"
-    />
     <link rel="stylesheet" href="../css/stylesheet.css" />
     <link
       rel="stylesheet"
@@ -16,16 +12,23 @@
       href="https://fonts.googleapis.com/css?family=ABeeZee"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Press Start 2P"
+    />
     <script src="../js/deleteCmdJS.js"></script>
   </head>
   <body>
     <div class="sidenav">
-      <img
-        src="../images/trovologo.png"
-        width="45"
-        height="45"
-        style="margin: 0px 0px 20px 25px"
-      />
+      <div style="color: white">
+        <img
+          src="../images/trovologo.png"
+          width="45"
+          height="45"
+          class="imagePlacement"
+        />
+        &nbsp;<i>BlazeBot</i>
+      </div>
       <button class="dropdown-btn">
         Bot Commands
         <i class="fa fa-caret-down"></i>
@@ -44,11 +47,13 @@
       </button>
       <div class="dropdown-container">
         <a href="./labels.html">Labels</a>
+        <a href="./alerts.html">Alerts</a>
+        <a href="./viewcount.html">View Count</a>
       </div>
-      <a href="./login.html">Login</a>
+      <a href="#">Login</a>
     </div>
     <div class="main">
-      <div class="container" style="padding: 35px">
+      <div class="container" style="margin-top: 30px">
         <form>
           <div class="borderTitle"><h2>Delete Command</h2></div>
           <div class="form-group">

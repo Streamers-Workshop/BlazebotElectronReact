@@ -11,26 +11,31 @@ const arrayEffect = effectsName.effects;
 $(document).ready(function () {
   var selectEffect = $("#selectEffectID");
   $.each(arrayEffect, function (key, value) {
-    selectEffect.append("<option value=" + key + ">" + value + "</option>");
+    selectEffect.append("<option value=" + key + ">" + value[0] + "</option>");
   });
 
   selectEffect.on("change", function () {
+    var urlDisplay = $("#txtURL").val(arrayEffect[this.value][1]);
+
     switch (this.value) {
       case "1":
         $("#displayEffect").html(
           '<h1 class="ml1"><span class="text-wrapper"><span class="line line1"></span><span class="letters">Bioblaze</span><span class="line line2"></span></span></h1>'
         );
         effect1();
+        urlDisplay;
         break;
 
       case "2":
         $("#displayEffect").html('<h1 class="ml2">Bioblaze</h1>');
         effect2();
+        urlDisplay;
         break;
 
       case "3":
         $("#displayEffect").html('<h1 class="ml3">Bioblaze</h1>');
         effect3();
+        urlDisplay;
         break;
 
       case "4":
@@ -38,12 +43,14 @@ $(document).ready(function () {
           '<h1 class="ml9"><span class="text-wrapper"><span class="letters">Bioblaze</span></span></h1>'
         );
         effect4();
+        urlDisplay;
         break;
       case "5":
         $("#displayEffect").html(
           '<h1 class="ml10"><span class="text-wrapper"><span class="letters">Bioblaze</span></span></h1>'
         );
         effect5();
+        urlDisplay;
         break;
 
       case "6":
@@ -51,16 +58,19 @@ $(document).ready(function () {
           '<h1 class="ml11"><span class="text-wrapper"><span class="line line1"></span><span class="letters">Bioblaze</span></span></h1>'
         );
         effect6();
+        urlDisplay;
         break;
 
       case "7":
         $("#displayEffect").html('<h1 class="ml12">Bioblaze</h1>');
         effect7();
+        urlDisplay;
         break;
 
       case "8":
         $("#displayEffect").html('<h1 class="ml13">Bioblaze</h1>');
         effect8();
+        urlDisplay;
         break;
 
       case "9":
@@ -68,11 +78,13 @@ $(document).ready(function () {
           '<h1 class="ml14"><span class="text-wrapper"><span class="letters">Bioblaze</span><span class="line"></span></span></h1>'
         );
         effect9();
+        urlDisplay;
         break;
 
       case "10":
         $("#displayEffect").html('<h1 class="ml16">Bioblaze</h1>');
         effect10();
+        urlDisplay;
         break;
     }
   });
@@ -143,6 +155,7 @@ function effect2() {
       delay: 1000,
     });
 }
+
 // Effect 3 //
 function effect3() {
   var textWrapper = document.querySelector(".ml3");

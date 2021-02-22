@@ -18,9 +18,11 @@
   "homepage": "https://github.com/IAmNotTheLeo/BlazeBotApp#readme",
   "dependencies": {
     "animejs": "^3.2.1",
+    "bootstrap": "^4.6.0",
     "electron": "^11.2.3",
     "electron-packager": "^15.2.0",
     "jquery": "^3.5.1",
+    "showdown": "^1.9.1",
     "sweetalert2": "^10.15.2"
   }
 }

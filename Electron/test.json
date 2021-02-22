@@ -1,18 +1,22 @@
 {
   "commands": {
-    "test1": "1testing",
-    "test2": "2testing"
+    "twitter": "Proin varius nunc neque, commodo efficitur elit sagittis ut. Donec eget nisi.",
+    "instagram": "Phasellus pharetra nisl venenatis lacus maximus scelerisque id at metus. Aliquam tortor.    ",
+    "snapchat": "Etiam velit diam, blandit at auctor non, tincidunt vitae tortor. Orci varius.",
+    "facebook": "Vestibulum eu enim vel tellus sagittis euismod. Quisque auctor convallis libero vitae.",
+    "whatsapp": "Donec a augue quis metus semper elementum. Suspendisse mi nisl, dignissim a.",
+    "paypal": "Vestibulum eu enim vel tellus quis metus semper elementum. Suspendisse."
   },
   "effects": {
-    "1": "Effect 1",
-    "2": "Effect 2",
-    "3": "Effect 3",
-    "4": "Effect 4",
-    "5": "Effect 5",
-    "6": "Effect 6",
-    "7": "Effect 7",
-    "8": "Effect 8",
-    "9": "Effect 9",
-    "10": "Effect 10"
+    "1": ["Effect 1", "url1"],
+    "2": ["Effect 2", "url2"],
+    "3": ["Effect 3", "url3"],
+    "4": ["Effect 4", "url4"],
+    "5": ["Effect 5", "url5"],
+    "6": ["Effect 6", "url6"],
+    "7": ["Effect 7", "url7"],
+    "8": ["Effect 8", "url8"],
+    "9": ["Effect 9", "url9"],
+    "10": ["Effect 10", "url10"]
   }
 }
