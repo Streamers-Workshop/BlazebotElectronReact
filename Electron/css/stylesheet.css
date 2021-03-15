@@ -4,11 +4,16 @@ body {
   font-size: 20px !important;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* Logo */
 
 .imagePlacement {
   margin: 10px 0px 20px 20px;
-  box-shadow: 2px 2px 4px #000000;
+  box-shadow: 2px 2px 4px #2e2e2e;
+  border-radius: 10px;
 }
 
 /* Preview Container - labels.html */
@@ -38,7 +43,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 180px;
+  width: 190px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -47,7 +52,6 @@ body {
   overflow-x: hidden;
   padding-top: 20px;
 }
-
 .sidenav a,
 .dropdown-btn {
   padding: 6px 8px 6px 16px;

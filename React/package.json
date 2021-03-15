@@ -16,7 +16,5 @@
     "url": "https://github.com/IAmNotTheLeo/ReactPage/issues"
   },
   "homepage": "https://github.com/IAmNotTheLeo/ReactPage#readme",
-  "dependencies": {
-    "create-react-app": "^4.0.2"
-  }
+  "dependencies": {}
 }

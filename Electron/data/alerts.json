@@ -1,0 +1,34 @@
+{
+  "alerts": {
+    "follow": {
+      "active": true,
+      "messages": [
+        "Thank you {user} for Following"
+      ]
+    },
+    "joined": {
+      "active": true,
+      "messages": [
+        "Welcome to the Stream {user}"
+      ]
+    },
+    "sub": {
+      "active": true,
+      "messages": [
+        "Thank you {user} for Subbing"
+      ]
+    },
+    "spell": {
+      "active": true,
+      "messages": [
+        "Thank you {user} for Spell"
+      ]
+    },
+    "raid": {
+      "active": true,
+      "messages": [
+        "Thank you {user} for the Raid"
+      ]
+    }
+  }
+}

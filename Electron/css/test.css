@@ -1,0 +1,223 @@
+body {
+  margin: 0px auto;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#widget {
+  position: relative;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+#line,
+#mainText,
+#subText {
+  display: block;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "BenchNine", sans-serif;
+  color: #fff;
+  white-space: nowrap;
+}
+
+#line {
+  width: 0;
+  height: 0;
+  top: 500px;
+  left: 50%;
+  margin-left: 0;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  opacity: 0;
+  background-color: rgba(0, 36, 243, 0.7);
+}
+
+@-webkit-keyframes lineIn {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 2200px;
+    margin-left: -1100px;
+    opacity: 1;
+    height: 3px;
+  }
+}
+
+@keyframes lineIn {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 2200px;
+    margin-left: -1100px;
+    opacity: 1;
+    height: 3px;
+  }
+}
+
+@-webkit-keyframes lineGrow {
+  0% {
+  }
+  100% {
+    height: 200px;
+    top: 400px;
+  }
+}
+
+@keyframes lineGrow {
+  0% {
+  }
+  100% {
+    height: 200px;
+    top: 400px;
+  }
+}
+
+@-webkit-keyframes linehide {
+  0% {
+    height: 200px;
+    top: 400px;
+  }
+  100% {
+    height: 0px;
+    top: 500px;
+  }
+}
+
+@keyframes linehide {
+  0% {
+    height: 200px;
+    top: 400px;
+  }
+  100% {
+    height: 0px;
+    top: 500px;
+  }
+}
+
+#mainText {
+  font-size: 55px;
+  width: 2200px;
+  line-height: 100px;
+  text-indent: -3000px;
+  top: 30px;
+  opacity: 0;
+}
+
+@-webkit-keyframes textIn {
+  0% {
+    text-indent: -3000px;
+    opacity: 1;
+  }
+  100% {
+    text-indent: -20px;
+    opacity: 1;
+  }
+}
+
+@keyframes textIn {
+  0% {
+    text-indent: -3000px;
+    opacity: 1;
+  }
+  100% {
+    text-indent: -20px;
+    opacity: 1;
+  }
+}
+
+@keyframes textTravel {
+  0% {
+    text-indent: -20px;
+  }
+  90% {
+    text-indent: 20px;
+  }
+  95% {
+    text-indent: 3000px;
+  }
+  100% {
+    text-indent: 3000px;
+  }
+}
+
+#subText {
+  font-size: 30px;
+  width: 2200px;
+  line-height: 40px;
+  text-indent: 3000px;
+  bottom: 30px;
+  opacity: 0;
+}
+#subText i {
+  color: #000;
+}
+
+@-webkit-keyframes tagIn {
+  0% {
+    text-indent: 3000px;
+    opacity: 1;
+  }
+  100% {
+    text-indent: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes tagIn {
+  0% {
+    text-indent: 3000px;
+    opacity: 1;
+  }
+  100% {
+    text-indent: 20px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tagTravel {
+  0% {
+    text-indent: 20px;
+  }
+  90% {
+    text-indent: -20px;
+  }
+  95% {
+    text-indent: -3000px;
+  }
+  100% {
+    text-indent: -3000px;
+  }
+}
+
+@keyframes tagTravel {
+  0% {
+    text-indent: 20px;
+  }
+  90% {
+    text-indent: -20px;
+  }
+  95% {
+    text-indent: -3000px;
+  }
+  100% {
+    text-indent: -3000px;
+  }
+}

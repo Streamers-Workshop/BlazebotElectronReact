@@ -1,0 +1,94 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Toggle Switch */
+
+.onoffswitch {
+  position: relative;
+  width: 55px;
+}
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 20px;
+  padding: 0;
+  margin-top: 10px;
+  line-height: 20px;
+  border: 0px solid #ffffff;
+  border-radius: 30px;
+  background-color: #9e9e9e;
+}
+.onoffswitch-label:before {
+  content: "";
+  display: block;
+  width: 30px;
+  margin: -5px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 31px;
+  border-radius: 30px;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background-color: #1f7cff;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label,
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  border-color: #1f7cff;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px;
+  background-color: white;
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Range Slider */
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(52, 52, 226);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(52, 52, 226);
+  cursor: pointer;
+}

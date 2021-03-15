@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blaze App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <script src="./joinPage.js"></script>
+    <link rel="stylesheet" href="./giveaway.css" />
+</head>
+
+<body>
+    <div class="overlay">
+        <canvas id="world"></canvas>
+        <h1 id="winner"></h1>
+        <div id="close" style="color: white">X</div>
+    </div>
+
+    <nav class="navbar navbar-dark" style="background-color: black; padding: 15px 20px 15px 25px;">
+        <a class="btn btn-light" href="./giveaway.html" role="button">&#8592;</a>
+    </nav>
+
+    <div class="main">
+        <div class="container" style="margin-top: 30px; text-align: center">
+            <h4>Giveaway Members</h4>
+            <div class="form-group">
+                <select id="selectUser" size="10" style="width:100%; text-align: center; font-size: x-large">
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input style="text-align: center; background-color: white;" type="text" class="form-control"
+                    id="txtSelectedUser" disabled>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="btnDeleteUser" class="btn btn-outline-danger">
+                    Delete User
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="./giveawayJS.js"></script>
+
+</html>

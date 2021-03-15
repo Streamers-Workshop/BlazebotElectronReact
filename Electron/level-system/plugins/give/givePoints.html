@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blaze App</title>
+    <link rel="stylesheet" href="../../../css/stylesheet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press Start 2P" />
+    <script src="./givePointsPage.js"></script>
+    <link rel="stylesheet" href="../../../css/cssComponents.css" />
+    <style>
+        .slidecontainer {
+            width: 65%;
+            margin: 0 auto;
+        }
+
+        .slider2 {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: 0.2s;
+            transition: opacity 0.2s;
+        }
+
+        .slider2:hover {
+            opacity: 1;
+        }
+
+        .slider2::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: rgb(52, 52, 226);
+            cursor: pointer;
+        }
+
+        .slider2::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: rgb(52, 52, 226);
+            cursor: pointer;
+        }
+    </style>
+
+<body>
+    <div class="sidenav">
+        <div style="color: white">
+            <img src="../../../images/trovologo.png" width="45" height="45" class="imagePlacement" />
+            &nbsp;<i>BlazeBot</i>
+        </div>
+        <button class="dropdown-btn">
+            Bot Commands
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../../html/bot-commands/commands.html">List of Commands</a>
+            <a href="../../../html/bot-commands/addCmd.html">Add Commmand</a>
+            <a href="../../../html/bot-commands/deleteCmd.html">Delete Command</a>
+            <a href="../../../html/bot-commands/editCmd.html">Edit Command</a>
+        </div>
+        <a href="../../../html/plugins.html">Plugins</a>
+        <a href="../../../html/services.html">Services</a>
+        <button class="dropdown-btn">
+            Alert Message
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../../html/alert-message/followMsg.html">Follow Message</a>
+            <button class="dropdown-btn">
+                Joined Messages
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../../../html/alert-message/joinedMsg.html">Joined Message</a>
+                <a href="../../../html/alert-message/uniqueMsg.html">Unique Message</a>
+            </div>
+            <a href="../../../html/alert-message/subMsg.html">Sub Message</a>
+            <a href="../../../html/alert-message/spellMsg.html">Spell Message</a>
+            <a href="../../../html/alert-message/raidMsg.html">Raid Message</a>
+        </div>
+        <button class="dropdown-btn">
+            Level System
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../add/addPoints.html">Add Points</a>
+            <a href="../give/givePoints.html">Give Points</a>
+            <a href="../level/showLevels.html">Show Level</a>
+            <a href="../points/showPoints.html">Show Points</a>
+        </div>
+        <a href="../live.html">Live</a>
+        <a href="#">Login</a>
+    </div>
+    <div class="main">
+        <div class="container" style="margin-top: 30px;">
+            <div class="borderTitle">
+                <h2>Give Points</h2>
+            </div>
+            <div class="form-group">
+                <label for="toggleActivate">Activate Give Point</label>
+                <div class="onoffswitch">
+                    <input id="toggleActivate" type="checkbox" class="onoffswitch-checkbox" tabindex="0" checked>
+                    <label class="onoffswitch-label" for="toggleActivate"></label>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 45px">
+                <label id="displayTime" for="timeSlider"></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1000" max="5000" class="slider2" id="timeSlider">
+                    <div style="text-align: center; margin-top: 10px;"><button id="btnUpdateGive" type="button"
+                            class="btn btn-outline-primary">Update</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../../../js/dropdown.js"></script>
