@@ -2,33 +2,32 @@
   "alerts": {
     "follow": {
       "active": true,
-      "messages": [
-        "Thank you {user} for Following"
-      ]
+      "messages": ["Thank you {user} for Following"],
+      "name": "Follow Alert"
     },
     "joined": {
       "active": true,
-      "messages": [
-        "Welcome to the Stream {user}"
-      ]
+      "messages": ["Welcome to the Stream {user}"],
+      "name": "Joined Alert"
     },
     "sub": {
       "active": true,
-      "messages": [
-        "Thank you {user} for Subbing"
-      ]
+      "messages": ["Thank you {user} for Subbing"],
+      "name": "Sub Alert"
     },
     "spell": {
       "active": true,
-      "messages": [
-        "Thank you {user} for Spell"
-      ]
+      "messages": ["Thank you {user} for Spell"],
+      "name": "Spell Alert"
     },
     "raid": {
       "active": true,
-      "messages": [
-        "Thank you {user} for the Raid"
-      ]
+      "messages": ["Thank you {user} for the Raid"],
+      "name": "Raid Alert"
+    },
+    "uniqueJoin": {
+      "active": true,
+      "name": "Unique Joined Alert"
     }
   }
 }

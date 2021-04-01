@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blaze App</title>
+    <link rel="stylesheet" href="../../../../css/stylesheet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter One" />
+    <script src="./addPointsPage.js"></script>
+    <link rel="stylesheet" href="../../../../css/cssComponents.css" />
+    <style>
+        .slidecontainer {
+            width: 65%;
+            margin: 0 auto;
+        }
+
+        .slider2 {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: 0.2s;
+            transition: opacity 0.2s;
+        }
+
+        .slider2:hover {
+            opacity: 1;
+        }
+
+        .slider2::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: rgb(52, 52, 226);
+            cursor: pointer;
+        }
+
+        .slider2::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: rgb(52, 52, 226);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window">-BlazeBot-</div>
+    <div class="sidenav">
+        <div>
+            <img src="../../../../images/logo.png" class="imagePlacement" />
+        </div>
+        <button class="dropdown-btn">
+            Bot Commands
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../../bot-commands/html/cmds.html">Commands</a>
+            <a href="../../../bot-commands/html/add.html">Add Commmand</a>
+            <a href="../../../bot-commands/html/delete.html">Delete Command</a>
+            <a href="../../../bot-commands/html/edit.html">Edit Command</a>
+        </div>
+        <a href="../../../features/features.html">Features</a>
+        <a href="../../../games/games.html">Games</a>
+        <button class="dropdown-btn">
+            Alert Message
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../../alert-message/html/follow.html">Follow Message</a>
+            <button class="dropdown-btn">
+                Joined Messages
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../../../alert-message/html/joined.html">Joined Message</a>
+                <a href="../../../alert-message/html/unique.html">Unique Message</a>
+            </div>
+            <a href="../../../alert-message/html/sub.html">Sub Message</a>
+            <a href="../../../alert-message/html/spell.html">Spell Message</a>
+            <a href="../../../alert-message/html/raid.html">Raid Message</a>
+        </div>
+        <button class="dropdown-btn">
+            Level System
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../user-data.html" class="textOverflow">Enable Level & Points</a>
+            <a href="#">Add Points</a>
+            <a href="../give/givePoints.html">Give Points</a>
+            <a href="../level/showLevels.html">Show Level</a>
+            <a href="../points/showPoints.html">Show Points</a>
+            <a href="../../reset/reset.html">Reset</a>
+        </div>
+        <button class="dropdown-btn">
+            Widgets
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../../widgets/alerts/alerts.html">Alerts</a>
+            <a href="../../../widgets/follow-goal/follow.html">Follow Widget</a>
+            <a href="../../../widgets/sub-goal/sub.html">Sub Widget</a>
+            <a href="../../../widgets/mana-goal/mana.html">Mana Widget</a>
+            <a href="../../../widgets/elixir-goal/elixir.html">Elixir Widget</a>
+        </div>
+        <a href="../../../other/chatlog/chatlog.html">Chat Log</a>
+        <a href="../../../info/info.html">Info</a>
+    </div>
+    <div class="main">
+        <div class="borderTitle">
+            <h2>Add Points</h2>
+        </div>
+        <div class="container">
+            <div class="form-group">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="toggleActivate">
+                    <label class="custom-control-label" for="toggleActivate">Activate Add Points</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="selectRoleID">Add Role</label>
+                <select class="form-control" id="selectRoleID">
+                    <option value="creator">Creator</option>
+                    <option value="moderator">Moderator</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="acceptedRoles">Roles Set - (1/2)</label>
+                <input style="text-align: center; background-color: white;" type="text" class="form-control"
+                    id="acceptedRoles" disabled>
+            </div>
+            <div style="text-align: center;">
+                <button type="button" id="previousClickID" class="btn btn-outline-dark">
+                    <span>&nbsp;&#8249;&nbsp;</span>
+                </button>
+                <button type="button" id="nextClickID" class="btn btn-outline-dark">
+                    <span>&nbsp;&#8250;&nbsp;</span>
+                </button>
+            </div>
+            <div style="text-align: center; margin-top: 15px; margin-bottom: 15px;">
+                <button type="button" id="btnAdd" class="btn btn-outline-success">Add</button>
+                <button type="button" id="btnRemove" class="btn btn-outline-danger">Remove</button>
+            </div>
+            <div class="form-group">
+                <label id="displayPoints" for="timeSlider"></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1000" max="5000" class="slider2" id="timeSlider">
+                    <div style="text-align: center; margin-top: 10px;"><button id="btnUpdateTime" type="button"
+                            class="btn btn-outline-primary">Update</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../../../../js/dropdown.js"></script>

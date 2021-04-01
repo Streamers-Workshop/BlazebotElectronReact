@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blaze App</title>
+    <link rel="stylesheet" href="../../../css/stylesheet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../css/bar.css" />
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter One" />
+    <script src="./manaPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/spectrum-colorpicker2/dist/spectrum.min.css">
+</head>
+
+<body>
+    <div class="window">-BlazeBot-</div>
+    <div class="sidenav">
+        <div>
+            <img src="../../../images/logo.png" class="imagePlacement" />
+        </div>
+        <button class="dropdown-btn">
+            Bot Commands
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../bot-commands/html/cmds.html">Commands</a>
+            <a href="../../bot-commands/html/add.html">Add Commmand</a>
+            <a href="../../bot-commands/html/delete.html">Delete Command</a>
+            <a href="../../bot-commands/html/edit.html">Edit Command</a>
+        </div>
+        <a href="../../features/features.html">Features</a>
+        <a href="../../games/games.html">Games</a>
+        <button class="dropdown-btn">
+            Alert Message
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../alert-message/html/follow.html">Follow Message</a>
+            <button class="dropdown-btn">
+                Joined Messages
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../../alert-message/html/joined.html">Joined Message</a>
+                <a href="../../alert-message/html/unique.html">Unique Message</a>
+            </div>
+            <a href="../../alert-message/html/sub.html">Sub Message</a>
+            <a href="../../alert-message/html/spell.html">Spell Message</a>
+            <a href="../../alert-message/html/raid.html">Raid Message</a>
+        </div>
+        <button class="dropdown-btn">
+            Level System
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../../level-system/user-data.html" class="textOverflow">Enable Level & Points</a>
+            <a href="../../level-system/plugins/add/addPoints.html">Add Points</a>
+            <a href="../../level-system/plugins/give/givePoints.html">Give Points</a>
+            <a href="../../level-system/plugins/level/showLevels.html">Show Level</a>
+            <a href="../../level-system/plugins/points/showPoints.html">Show Points</a>
+            <a href="../../level-system/reset/reset.html">Reset</a>
+        </div>
+        <button class="dropdown-btn">
+            Widgets
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../alerts/alerts.html">Alerts</a>
+            <a href="../follow-goal/follow.html">Follow Widget</a>
+            <a href="../sub-goal/sub.html">Sub Widget</a>
+            <a href="#">Mana Widget</a>
+            <a href="../elixir-goal/elixir.html">Elixir Widget</a>
+        </div>
+        <a href="../../other/chatlog/chatlog.html">Chat Log</a>
+        <a href="../../info/info.html">Info</a>
+    </div>
+    <div class="main">
+        <div class="borderTitle">
+            <h2>Mana Widget</h2>
+        </div>
+        <div class="container">
+
+            <div class="form-group" style="margin-bottom: 25px;">
+                <label>Preview</label>
+                <div class="borderPreview">
+                    <div class='goal-cont'>
+                        <div style='position: relative'>
+                            <div id='goal-bar'>
+                                <p id='goal-current'>0</p>
+                                <p id='title' class='textOverflow'>Mana</p>
+                                <p id='goal-total'>100</p>
+                                <div id='total-bar-mana'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>URL</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button data-clipboard-target="#urlValue" class="btnCopy btn btn-outline-primary" type="button"
+                            id="copyURL">Copy</button>
+                    </div>
+                    <input id="urlValue" type="text" class="form-control" aria-describedby="copyURL" value="URL">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label>Title</label>
+                <input class="form-control" id="followTxt" value="Mana" />
+            </div>
+
+            <div class="form-group">
+                <label>Background</label>
+                <input class="form-control" id="colorBackground" value='#3cd4c5' />
+            </div>
+
+            <div class="form-group">
+                <label>Font Colour</label>
+                <input class="form-control" id="colorFont" value='white' />
+            </div>
+
+            <div class="form-group">
+                <label>Border Colour</label>
+                <input class="form-control" id="colorBorder" value='white' />
+            </div>
+
+            <div class="form-group">
+                <label>Font</label>
+                <select id="selectFont" class="form-control">
+                </select>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../../../js/dropdown.js"></script>

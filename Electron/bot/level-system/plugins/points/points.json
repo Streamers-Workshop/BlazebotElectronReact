@@ -1,0 +1,5 @@
+{
+  "active": false,
+  "points": 40,
+  "defaultMessage": "{user} has given {ammount} points to {receiver}"
+}

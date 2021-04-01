@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blaze App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+    <script src="./timePage.js"></script>
+    <link rel="stylesheet" href="../../../../css/cssComponents.css" />
+    <link rel="stylesheet" href="../../../../css/plugins.css" />
+    <style>
+        #time {
+            font-family: 'VT323', sans-serif;
+            color: #44F703;
+            -webkit-text-stroke: 2.8px rgb(44, 93, 42);
+            font-size: 130px;
+            text-align: center;
+            background-color: black;
+            border-radius: 25px;
+            margin: 0 auto;
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window">-Time-</div>
+    <nav class="navbar navbar-dark banner">
+        <a class="btn btn-light" href="../../features.html" role="button">&#8592;</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="toggleActivate">
+            <label class="custom-control-label" for="toggleActivate">Active</label>
+        </div>
+    </nav>
+    <div class="main">
+
+        <div class="container" style="margin-top: 30px">
+            <h2>Time</h2>
+            <i><u>What does Time do?</u></i>
+            <p>Show current time of Streamer</p>
+            <i><u>How to Trigger Time on chat?</u></i>
+            <p><b>!time</b></p>
+            <div id="time" style="margin-top: 55px">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

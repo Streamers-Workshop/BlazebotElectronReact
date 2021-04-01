@@ -1,0 +1,22 @@
+.banner {
+  background-color: rgb(32, 30, 30);
+  color: white;
+  padding: 40px 20px 15px 25px;
+}
+
+.window {
+  background-color: black;
+  height: 30px;
+  -webkit-app-region: drag;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  font-size: 20px;
+}

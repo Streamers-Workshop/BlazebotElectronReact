@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Blaze App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../../css/cssComponents.css" />
+    <link rel="stylesheet" href="../../../../css/plugins.css" />
+    <script src="./time-messagesPage.js"></script>
+</head>
+
+<body>
+    <div class="window">-Timed Messages-</div>
+    <nav class="navbar navbar-dark banner">
+        <a class="btn btn-light" href="../../features.html" role="button">&#8592;</a>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="toggleActivate">
+            <label class="custom-control-label" for="toggleActivate">Active</label>
+        </div>
+    </nav>
+    <div class="main">
+
+        <div class="container" style="margin-top: 20px;">
+            <h2>Timed Messages</h2>
+            <i><u>Whats Does Timed Messages do?</u></i>
+            <p>Display Timed Randomised Messages in Trovo Chat.</p>
+            <i><u>How to Trigger Timed Messages in chat?</u></i>
+            <p><b>!tm start / !tm stop</b></p>
+            <div class="form-group">
+                <div class="slidecontainer">
+                    <label id="displayTime" for="timeSlider"></label>
+                    <input type="range" min="15" max="45" value="15" class="slider" id="timeSlider">
+                    <div style="text-align: center; margin-top: 10px;"><button id="btnUpdateTime" type="button"
+                            class="btn btn-outline-primary">Update</button></div>
+                </div>
+                <div class="form-group">
+                    <label for="txtNewMessage">New Message</label>
+                    <textarea class="form-control" id="txtNewMessage" rows="5" style="resize: none;"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label id="valueMsg" for="listMessage"></label>
+                    <textarea class="form-control" id="listMessage" rows="5" style="resize: none;" disabled></textarea>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="EditMsg" />
+                    <label class="form-check-label" for="EditMsg">
+                        Edit
+                    </label>
+                </div>
+
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <button id="previousMessage" type="button" class="btn btn-outline-dark">&nbsp;&#8249;&nbsp;</button>
+                    <button id="nextMessage" type="button" class="btn btn-outline-dark">&nbsp;&#8250;&nbsp;</button>
+                </div>
+
+                <div style="text-align: center">
+                    <button id="btnAddClick" type="button" class="btn btn-outline-success">Add</button>
+                    <button id="btnDeleteClick" type="button" class="btn btn-outline-danger">Delete</button>
+                    <button id="btnEditClick" type="button" class="btn btn-outline-primary">Edit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
