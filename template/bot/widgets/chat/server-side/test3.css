@@ -1,0 +1,43 @@
+body {
+  background-color: transparent !important;
+  width: 100%;
+  font-size: 26px;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+
+.chatMessages {
+  width: 100%;
+  padding: 0px 20px 25px 20px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  position: fixed;
+  bottom: 0;
+}
+
+li {
+  padding: 15px 20px 0px 20px;
+  border-radius: 20px;
+  width: 100%;
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 2px;
+  background-color: #2929298c;
+  border: 2px solid #3c7e61;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.trovo-badge {
+  color: #299762;
+  margin-top: 20px;
+}
+
+.trovo,
+p {
+  word-wrap: break-word;
+  width: auto;
+  display: inline-block;
+}

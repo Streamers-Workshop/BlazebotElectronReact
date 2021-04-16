@@ -1,0 +1,11 @@
+{
+  "commands": {
+    "twitter": "Proin varius nunc neque, commodo efficitur elit sagittis ut. Donec eget nisi.",
+    "instagram": "Phasellus pharetra nisl venenatis lacus maximus scelerisque id at metus. Aliquam tortor.",
+    "snapchat": "Etiam velit diam, blandit at auctor non, tincidunt vitae tortor. Orci varius.",
+    "facebook": "Vestibulum eu enim vel tellus sagittis euismod. Quisque auctor convallis libero vitae.",
+    "whatsapp": "Donec a augue quis metus semper elementum. Suspendisse mi nisl, dignissim a.",
+    "paypal": "Vestibulum eu enim vel tellus quis metus semper elementum. Suspendisse",
+    "long": "Nunc rhoncus nisi lorem, eu maximus velit scelerisque in. Phasellus in tellus quis justo egestas efficitur ac vitae quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam aliquet in ex id convallis. Suspendisse aliquam odio a nisl molestie, in tincidunt odi"
+  }
+}

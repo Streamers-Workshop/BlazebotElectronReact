@@ -1,0 +1,44 @@
+.btn-spotify {
+  background-color: #3dd45e;
+  color: black;
+  font-size: larger;
+}
+
+.btn-spotify:hover {
+  background-color: #32b64f;
+  color: black;
+}
+
+.preview-Spotify {
+  background-color: rgba(223, 223, 223, 0.692);
+  width: 500px;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.album {
+  border-radius: 8px;
+  width: 180px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px 5px #727272;
+}
+
+.overlayURL {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.artist-spotify {
+  margin-top: 10px;
+}
+
+.spotify-view {
+  color: black;
+  width: 200px;
+  margin-top: 8px;
+}
+
+.artistsong {
+  color: #32b64f;
+}

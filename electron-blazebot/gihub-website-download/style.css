@@ -1,0 +1,13 @@
+body {
+  background-color: rgb(22, 22, 22);
+  font-family: "New Tegomin", serif !important;
+}
+
+.btn-trovo {
+  background-color: #4a9674;
+}
+
+.btn-trovo:hover {
+  background-color: #30e95e;
+  color: rgb(0, 0, 0);
+}

@@ -1,0 +1,35 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: "ABeeZee";
+}
+
+.main-index {
+  /* the start of desktop app - Trovo Login */
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #181617;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.btn-trovo {
+  background-color: #16802f;
+  color: white;
+  font-size: larger;
+}
+
+.btn-trovo:hover {
+  background-color: #09571a;
+  color: white;
+}
+
+.view-plugins {
+  margin: 120px 20px 10px 20px;
+}

@@ -1,0 +1,69 @@
+body {
+  background-color: transparent !important;
+  width: 100%;
+  font-size: 26px;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+
+.chatMessages {
+  width: 100%;
+  padding: 0px 20px 25px 20px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  position: fixed;
+  bottom: 0;
+}
+
+.creator-banner {
+  border-top: 7px solid #d44b4b;
+}
+
+.mod-banner {
+  border-top: 7px solid #8b66de;
+}
+
+.sub-banner {
+  border-top: 7px solid #e8b669;
+}
+
+.banner {
+  border-top: 7px solid #41b80f;
+}
+
+.trovoName-mod {
+  color: #8b66de;
+}
+
+.trovoName-creator {
+  color: #d44b4b;
+}
+
+.trovoName-sub {
+  color: #e8b669;
+}
+
+.trovoName {
+  color: #41b80f;
+}
+
+li {
+  border-radius: 15px 15px 15px 15px;
+  padding: 15px 20px 0px 20px;
+  width: 100%;
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #2929298c;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.trovo,
+p {
+  word-wrap: break-word;
+  width: auto;
+  display: inline-block;
+}

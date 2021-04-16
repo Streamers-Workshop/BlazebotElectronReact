@@ -1,0 +1,16 @@
+.window {
+  background-color: black;
+  height: 30px;
+  -webkit-app-region: drag;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  position: fixed;
+  font-size: 20px;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}

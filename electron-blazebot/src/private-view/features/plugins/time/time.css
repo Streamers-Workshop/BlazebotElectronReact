@@ -1,0 +1,9 @@
+.clock {
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 6px;
+  color: red;
+  font-size: 7vh;
+  font-family: "Press Start 2P", cursive;
+}

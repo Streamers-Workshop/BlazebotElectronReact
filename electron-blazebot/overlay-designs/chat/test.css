@@ -1,0 +1,39 @@
+body {
+  background-color: transparent !important;
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+}
+
+.chatMessages {
+  height: 600px;
+  width: 100%;
+  padding: 10px 10px 0px 10px;
+  margin: 0 auto;
+  color: white;
+  background: rgba(0, 0, 0, 0.452);
+  overflow-y: scroll;
+  position: fixed;
+  bottom: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.trovo {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.trovo,
+p {
+  word-wrap: break-word;
+  width: auto;
+  display: inline-block;
+}
+
+.trovo-badge {
+  color: #299762;
+  margin-top: 20px;
+}

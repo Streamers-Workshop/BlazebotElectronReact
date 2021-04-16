@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title> Chat Log</title>
+    <link rel="stylesheet" href="../../css/stylesheet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carter One" />
+    <script src="./accountPage.js"></script>
+</head>
+
+<body>
+    <div class="window">-BlazeBot-</div>
+    <div class="sidenav">
+        <div>
+            <img src="../../images/logo.png" class="imagePlacement" />
+        </div>
+        <button class="dropdown-btn">
+            Bot Commands
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../bot-commands/html/cmds.html">Commands</a>
+            <a href="../bot-commands/html/add.html">Add Commmand</a>
+            <a href="../bot-commands/html/delete.html">Delete Command</a>
+            <a href="../bot-commands/html/edit.html">Edit Command</a>
+        </div>
+        <a href="../features/features.html">Features</a>
+        <a href="../games/games.html">Games</a>
+        <button class="dropdown-btn">
+            Alert Message
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../alert-message/html/follow.html">Follow Message</a>
+            <button class="dropdown-btn">
+                Joined Messages
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="../alert-message/html/joined.html">Joined Message</a>
+                <a href="../alert-message/html/unique.html">Unique Message</a>
+            </div>
+            <a href="../alert-message/html/sub.html">Sub Message</a>
+            <a href="../alert-message/html/spell.html">Spell Message</a>
+            <a href="../alert-message/html/raid.html">Raid Message</a>
+        </div>
+        <button class="dropdown-btn">
+            Level System
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../level-system/user-data.html" class="textOverflow">Enable Level & Points</a>
+            <a href="../level-system/plugins/add/addPoints.html">Add Points</a>
+            <a href="../level-system/plugins/give/givePoints.html">Give Points</a>
+            <a href="../level-system/plugins/level/showLevels.html">Show Level</a>
+            <a href="../level-system/plugins/points/showPoints.html">Show Points</a>
+            <a href="../level-system/reset/reset.html">Reset</a>
+        </div>
+        <button class="dropdown-btn">
+            Widgets
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="../widgets/alerts/alerts.html">Alerts</a>
+            <a href="../widgets/chat/chat.html">Chat</a>
+            <a href="../widgets/follow-goal/follow.html">Follow Widget</a>
+            <a href="../widgets/sub-goal/sub.html">Sub Widget</a>
+            <a href="../widgets/mana-goal/mana.html">Mana Widget</a>
+            <a href="../widgets/elixir-goal/elixir.html">Elixir Widget</a>
+        </div>
+        <a href="../other/chatlog/chatlog.html">Chat Log</a>
+        <a href="../spotify/spotify.html">Spotify</a>
+        <a href="../info/info.html">Info</a>
+        <a href="../connect/connect.html">Connect Bot</a>
+        <a href="#">Account</a>
+    </div>
+
+    <div class="main">
+        <div class="borderTitle">
+            <h2>Account</h2>
+        </div>
+        <div class="container">
+            <div class="form-group">
+                <label>Trovo Account</label>
+                <br />
+                <img src="../../images/test.webp" class="rounded-pill" style="border: 2px solid #378664">
+            </div>
+            <div class="form-group" style="margin-top: 6%;">
+                <div id="trovoName" class="shadow-lg p-3 mb-3 bg-white rounded">Name: <span
+                        style="color: #298D61">IAmNotLeo</span></div>
+                <div id="trovoFollowers" class="shadow-lg p-3 mb-3 bg-white rounded">Followers: <span
+                        style="color: #298D61">20</span></div>
+                <div id="trovoSubs" class="shadow-lg p-3 mb-3 bg-white rounded">Subscribers: <span
+                        style="color: #298D61">30</span></div>
+            </div>
+            <div class="form-group" style="text-align: center">
+                <button id="logout" type="button" class="btn btn-outline-success">Sign Out</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../../js/dropdown.js"></script>
